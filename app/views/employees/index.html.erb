@@ -1,0 +1,20 @@
+<h2>All Employees</h2>
+
+<ul>
+
+<% @employees.each do |employee|%>
+  <li>
+            
+            <%= link_to employee.full_name, employee_path(employee.id) %>
+            <br>
+            <%= link_to_image(employee.img_url)%>
+            <br>
+            Title: <%= employee.title %>
+            <br>
+            Office: <%= employee.office %>
+            <br>
+            Dog: <%= employee.dog.name %>
+        </li>
+        <br>
+        <% end %>
+</ul>

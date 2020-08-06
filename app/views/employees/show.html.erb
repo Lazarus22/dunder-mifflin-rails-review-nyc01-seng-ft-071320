@@ -1,0 +1,11 @@
+<h1>Employee Show</h1>
+<h3><img src="<%@employee.img_url%>"></h3>
+<h3>Full Name: <%= @employee.full_name%></h3>
+<h3>Title: <%= @employee.title%></h3>
+<h3>Office: <%= @employee.office%></h3>
+<h3>Dog Name: <%= @employee.dog.name%></h3>
+
+
+<%= link_to_image(@employee.img_url)%><br>
+
+<%= link_to "Index Page", employees_path %><br>
